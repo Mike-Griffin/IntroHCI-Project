@@ -23,12 +23,18 @@ $(document).ready(function () {
 
     $('#calendar').fullCalendar({
     	dayClick: function(date) {
-    		alert('day clicked');
+        //this is the popup to create the event
+        var format_date = date.format('MM/DD/YYYY hh:mm a');
+         var event_name=prompt('Enter name of event');
+         var start_time=prompt('Enter time of event', format_date.toString());
+        if(event_name) { // for example I've made an alert
+        console.log(date);
     		var myEvent = {
-  				title:"my new event",
-  				allDay: true,
-  				start: date,
+  				title:event_name,
+  				allDay: false,
+  				start: start_time ,
   				end: date
+        }
 			};
 			$('#calendar').fullCalendar('renderEvent', myEvent);
 
@@ -36,9 +42,6 @@ $(document).ready(function () {
     	eventClick: function() {
     		alert('event clicked');
     	},
-    	eventMouseover: function()  {
-    		alert('event mouseover');
-    	},   
         header: {
             left: 'prev,next today',
             center: 'title',
@@ -83,24 +86,24 @@ $(document).ready(function () {
         }
     });
     $('#calendar').fullCalendar('addEventSource', month);
-    
+
     $('#calendar').fullCalendar({
     dayClick: function(date, allDay, jsEvent, view) {
 
         if (allDay) {
-            // Clicked on the entire day 
+            // Clicked on the entire day
 
-            if ($(jsEvent.target).is('div.fc-day-number')) {      
-                // Clicked on the day number 
+            if ($(jsEvent.target).is('div.fc-day-number')) {
+                // Clicked on the day number
 
-                $('#calendar') 
-                    .fullCalendar('changeView', 'agendaDay'/* or 'basicDay' */) 
-                    .fullCalendar('gotoDate', date.getFullYear(), date.getMonth(), date.getDate()); 
+                $('#calendar')
+                    .fullCalendar('changeView', 'agendaDay'/* or 'basicDay' */)
+                    .fullCalendar('gotoDate', date.getFullYear(), date.getMonth(), date.getDate());
             }
         }
     }
 });
-    
+
 
     $('#calendar').fullCalendar('rerenderEvents');
 });
