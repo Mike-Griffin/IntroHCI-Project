@@ -8,7 +8,16 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
-var index = require('./routes/newPeople');
+var login = require('./routes/login');
+var index = require('./routes/index');
+var meetNewPeople = require('./routes/meetNewPeople');
+var connect = require('./routes/connect');
+var events = require('./routes/events');
+var newActivity = require('./routes/newActivity');
+var settings = require('./routes/settings');
+var faq = require('./routes/faq');
+var newConnect = require('./routes/newConnect');
+// var project = require('./routes/project');
 // Example route
 // var user = require('./routes/user');
 
@@ -28,6 +37,8 @@ app.use(express.cookieParser('Intro HCI secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/bower_components',  express.static( path.join(__dirname, '/bower_components')));
+
 
 // development only
 if ('development' == app.get('env')) {
@@ -36,9 +47,21 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 
+app.get('/', login.view);
+app.get('/meetNewPeople', meetNewPeople.view);
+app.get('/connect', connect.view)
+app.get('/events', events.view);
+app.get('/newActivity', newActivity.view);
+app.get('/settings', settings.view);
+app.get('/faq', faq.view);
+app.get('/index', index.view);
+app.get('/newConnect', newConnect.view);
+
+/*
+app.get('/project/:name', project.viewProject);
+*/
 // Example route
 // app.get('/users', user.list);
-app.get('/', newPeople.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
