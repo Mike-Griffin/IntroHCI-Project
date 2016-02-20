@@ -9,11 +9,18 @@ h1 {
 ul {
   list-style-type: none;
 }
+
+.list-hide{
+  display: none;
+
+}
+
 .page-links ul li {
   display: block;
   margin-top: 50px;
   width: 300px;
 }
+
 #page-links p {
   padding: 10px 10px 10px 10px;
   background-color: white;
@@ -26,7 +33,6 @@ ul {
 a {
   color: #000;
   text-decoration: none;
-
 }
 
 .btn-group {
@@ -37,6 +43,10 @@ a {
   background-color: grey;
   width:50%;
   color:white;
+}
+
+.panel-heading {
+  margin-top: 25px;
 }
 
 .panel-group {
@@ -56,9 +66,9 @@ a {
 }
 
 #dialog {
-  background-color:red;
+  background-color: #b7b7b7;
   z-index:1000000;
-  width: 250px;
+  width: 350px;
   height: 400px;
   position:absolute;
   top: 50%;
@@ -71,7 +81,6 @@ a {
 
 .event-time .container {
   /* this is still not working!!*/
-  width: 350px;
 }
 
 .level-container {
@@ -94,4 +103,28 @@ a {
 .activity-section{
   margin-top:50px;
   margin-bottom:50px;
+}
+
+  /*.modal-header, h4, .close {
+    background-color: #F2354E;
+    color:white !important;
+    text-align: center;
+    font-size: 20px;
+  }
+  .modal-footer {
+    background-color: #f9f9f9;
+  }*/
+
+.modal-header h2 .close {
+  background-color: #5cb85c;
+  color:white !important;
+  text-align: center;
+  font-size: 20px;
+}
+.modal-footer {
+  background-color: #f9f9f9;
+}
+
+#task-success {
+  z-index: 1080 !important;
 }
