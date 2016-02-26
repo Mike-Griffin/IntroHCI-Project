@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link rel="stylesheet" href="css/quiz.css">
   <link rel="stylesheet" href="onboarding.css">
@@ -14,60 +15,69 @@
   <link rel="stylesheet" href="css/main.css">
 
   <style>
-
-/***********************
+    /***********************
   RAISED BUTTONS
   ************************/
-  .btn-primary.raised {
-    box-shadow: 0 3px 0 0 #007299;
-  }
-  .btn-primary.raised:active, .btn-primary.raised.active {
-    background: #33a6cc;
-    box-shadow: none;
-    margin-bottom: -3px;
-    margin-top: 3px;
-  }
 
-/***********************
+    .btn-primary.raised {
+      box-shadow: 0 3px 0 0 #007299;
+    }
+
+    .btn-primary.raised:active,
+    .btn-primary.raised.active {
+      background: #33a6cc;
+      box-shadow: none;
+      margin-bottom: -3px;
+      margin-top: 3px;
+    }
+    /***********************
   CUSTON BTN VALUES
   ************************/
 
-  .btn {
-    padding: 24px 24px;
-    border: 0 none;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
+    .btn {
+      padding: 24px 24px;
+      border: 0 none;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
 
-  .btn-sm {
-    padding: 15px 15px;
-    border: 0 none;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
+    .btn-sm {
+      padding: 15px 15px;
+      border: 0 none;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
 
-  .btn:focus, .btn:active:focus, .btn.active:focus {
-    outline: 0 none;
-  }
+    .btn:focus,
+    .btn:active:focus,
+    .btn.active:focus {
+      outline: 0 none;
+    }
 
-  .btn-primary {
-    background: #0099cc;
-    color: #ffffff;
-  }
-  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: #33a6cc;
-  }
-  .btn-primary:active, .btn-primary.active {
-    background: #007299;
-    box-shadow: none;
-  }
+    .btn-primary {
+      background: #0099cc;
+      color: #ffffff;
+    }
 
-  .list-group li {
-    list-style: none;
-  }
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-primary.active,
+    .open > .dropdown-toggle.btn-primary {
+      background: #33a6cc;
+    }
 
+    .btn-primary:active,
+    .btn-primary.active {
+      background: #007299;
+      box-shadow: none;
+    }
+
+    .list-group li {
+      list-style: none;
+    }
   </style>
 
 </head>
@@ -75,7 +85,7 @@
 <body style="background-color:#FFC94A">
 
   <br>
-  <div class="container" >
+  <div class="container">
     <ul class="list-group">
       <li>
         <div class="panel panel-default">
@@ -90,68 +100,67 @@
                   </a>
                 </div>
                 <div class="pull-right">
-                  <a href="index">
-                    <h4> Skip All </h4>
-                  </a>
+
                 </div>
                 <br>
                 <br>
 
                 <div id="home-screen-text" class="container-fluid" align="center">
-                  <h3> Rate how difficult this task would be for you to do.</h3>
                   <hr>
                   <h1>QUESTION THREE</h1>
 
                   <h2>Helping someone in need...</h2>
                 </div>
 
-                <hr>
-
-                <div class = "page-links" align="center">
+                <!-- BREAD CRUMBS -->
+                <div class="container" align="center">
+                  <div class="btn-group" role="group" aria-label="...">
+                    <br>
+                    <a href="quizOne">
+                      <button type="button" class="btn btn-sm btn-default">1</button>
+                    </a>
+                    <a href="quizTwo">
+                      <button type="button" class="btn btn-sm btn-default">2</button>
+                    </a>
+                    <a href="#">
+                      <button type="button" class="btn btn-sm btn-default active">3</button>
+                    </a>
+                    <a href="quizFour">
+                      <button type="button" class="btn btn-sm btn-default">4</button>
+                    </a>
+                    <a href="quizFive">
+                      <button type="button" class="btn btn-sm btn-default">5</button>
+                    </a>
+                  </div>
+                </div>
+                <br>
+                <div class="page-links" align="center">
                   <ul>
                     <a href="quizFour">
-                      <button type="button" class="btn btn-success btn-block raised">WOULD BE EASY FOR ME TO DO.</button>
+                      <button type="button" class="btn btn-success btn-block raised">EASY</button>
                     </a>
                     <br>
                     <a href="quizFour">
-                      <button type="button" class="btn btn-warning btn-block raised">WOULD BE OKAY FOR ME TO DO.</button>
+                      <button type="button" class="btn btn-warning btn-block raised">MEDIUM</button>
                     </a>
                     <br>
                     <a href="quizFour">
-                      <button type="button" class="btn btn-danger btn-block raised">WOULD BE HARD FOR ME TO DO.</button>
-                    </ul>
-                  </div>
+                      <button type="button" class="btn btn-danger btn-block raised">HARD</button>
+                  </ul>
+                </div>
 
-                  <br></br>
+                <br></br>
 
-                  <div class="container" align="center">
-                    <a href="quizFour">
-                      <button type="button" class="btn btn-primary btn-block raised"> NEXT QUESTION </button>
-                    </a>
-                  </div>
+                <div class="container" align="center">
+                  <a href="quizFour">
+                    <button type="button" class="btn btn-primary btn-block raised"> NEXT QUESTION </button>
+                  </a>
+                  <br>
+                  <a href="index">
+                    <h4> Skip All </h4>
+                  </a>
+                </div>
 
-                                 <!-- BREAD CRUMBS -->
-                  <div class="container" align="center">
-                    <div class="btn-group" role="group" aria-label="...">
-                      <br>
-                      <h4>GO TO QUESTION</h4>
-                      <a href="quizOne">
-                        <button type="button" class="btn btn-sm btn-default">1</button>
-                      </a>
-                      <a href="quizTwo">
-                        <button type="button" class="btn btn-sm btn-default">2</button>
-                      </a>
-                      <a href="#">
-                        <button type="button" class="btn btn-sm btn-default active">3</button>
-                      </a>
-                      <a href="quizFour">
-                        <button type="button" class="btn btn-sm btn-default">4</button>
-                      </a>
-                      <a href="quizFive">
-                        <button type="button" class="btn btn-sm btn-default">5</button>
-                      </a>
-                    </div>
-                  </div>
 
                 </form>
                 <br>
@@ -162,12 +171,14 @@
           </div>
 
         </div>
-      </div>
-    </div>
+  </div>
+  </div>
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
+  </script>
   <script src="js/main.js"></script>
 
 </body>
