@@ -39,6 +39,15 @@
     letter-spacing: 1px;
     text-transform: uppercase;
   }
+
+  .btn-sm {
+    padding: 15px 15px;
+    border: 0 none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
   .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
   }
@@ -74,87 +83,94 @@
             <div class="panel-info">
 
               <div class="card card-block">
-                <a href="quizIntro">
-                  <h4> Go Back to Intro </h4>
-                </a>
-                <div id="home-screen-text" class="container-fluid" align="center">
-                  <h1>QUESTION ONE</h1>
-
-                  <h2>Wave hello to a stranger.</h2>
+                
+                <div class="pull-left">
+                  <a href="quizIntro">
+                    <h4> Go Back to Intro </h4>
+                  </a>
                 </div>
-
+                <div class="pull-right">
+                  <a href="index">
+                    <h4> Skip All </h4>
+                  </a>
+                </div>
+                <br>
                 <br>
 
-                <div class="container" align="center">
-                  <div class="btn-group" role="group" aria-label="...">
-                    <a href="#">
-                      <button type="button" class="btn btn-default active">1</button>
-                    </a>
-                    <a href="quizTwo">
-                      <button type="button" class="btn btn-default">2</button>
-                    </a>
-                    <a href="quizThree">
-                      <button type="button" class="btn btn-default">3</button>
-                    </a>
-                    <a href="quizFour">
-                      <button type="button" class="btn btn-default">4</button>
-                    </a>
-                    <a href="quizFive">
-                      <button type="button" class="btn btn-default">5</button>
-                    </a>
-                  </div>
+                <div id="home-screen-text" class="container-fluid" align="center">
+                  <h3> Rate how difficult this task would be for you to do.</h3>
+                  <hr>
+                  <h1>QUESTION ONE</h1>
+
+                  <h2>Waving hello to a stranger...</h2>
                 </div>
+
+                <hr>
 
                 <div class = "page-links" align="center">
                   <ul>
-                    <li>
-                      <a href="quizTwo">
-                        <button type="button" class="btn btn-success btn-block raised">EASY</button>
-                      </a>
-                    </li>
-                    <li>
-                     <a href="quizTwo">
-                      <button type="button" class="btn btn-warning btn-block raised">MEDIUM</button>
-                    </a>
-                  </li>
-                  <li>
                     <a href="quizTwo">
-                      <button type="button" class="btn btn-danger btn-block raised">HARD</button>
+                      <button type="button" class="btn btn-success btn-block raised">WOULD BE EASY FOR ME TO DO.</button>
                     </a>
-                  </li>
-                </ul>
+                    <br>
+                    <a href="quizTwo">
+                      <button type="button" class="btn btn-warning btn-block raised">WOULD BE OKAY FOR ME TO DO.</button>
+                    </a>
+                    <br>
+                    <a href="quizTwo">
+                      <button type="button" class="btn btn-danger btn-block raised">WOULD BE HARD FOR ME TO DO.</button>
+                    </ul>
+                  </div>
 
-              </div>
+                  <br></br>
 
-              <br></br>
+                  <div class="container" align="center">
+                    <a href="quizTwo">
+                      <button type="button" class="btn btn-primary btn-block raised"> NEXT QUESTION </button>
+                    </a>
+                  </div>
 
-              <div class="container" align="center">
-                <a href="quizTwo">
-                  <button type="button" class="btn btn-primary btn-block raised"> NEXT QUESTION </button>
-                </a>
-              </div>
-              <div align="center" style="color: #000000">
+
+                  <!-- BREAD CRUMBS -->
+                  <div class="container" align="center">
+                    <div class="btn-group" role="group" aria-label="...">
+                                        <br>
+                                        <h4>GO TO QUESTION</h4>
+                      <a href="#">
+                        <button type="button" class="btn-sm btn-default active">1</button>
+                      </a>
+                      <a href="quizTwo">
+                        <button type="button" class="btn-sm btn-default">2</button>
+                      </a>
+                      <a href="quizThree">
+                        <button type="button" class="btn-sm btn-default">3</button>
+                      </a>
+                      <a href="quizFour">
+                        <button type="button" class="btn-sm btn-default">4</button>
+                      </a>
+                      <a href="quizFive">
+                        <button type="button" class="btn-sm btn-default">5</button>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- END OF BREAD CRUMBS -->
+
+                </form>
                 <br>
-                <a href="index">
-                  <h4> Skip All </h4>
-                </a>
+
               </div>
-            </form>
-            <br>
+            </div>
 
           </div>
+
         </div>
-
       </div>
-
     </div>
   </div>
-</div>
-</div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="js/main.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="js/main.js"></script>
 
 </body>
 </div>

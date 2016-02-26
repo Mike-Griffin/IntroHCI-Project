@@ -14,10 +14,6 @@
   <!-- Include the compiled Ratchet CSS -->
   <link href="css/ratchet.css" rel="stylesheet">
 
-  <!--<link rel="stylesheet" href="css/normalize.css">-->
-  <link rel="stylesheet" href="css/main.css">
-  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-
   <style type="text/css">
   .back-link a {
     color: #4ca340;
@@ -38,6 +34,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 32px;
     margin-bottom: 3px;
+    background-color:#7DFFC9;
   }
   .entry-header {
     text-align: left;
@@ -57,9 +54,14 @@
 /***********************
   RAISED BUTTONS
   ************************/
-  .btn-primary.raised {
+  .btn-primary.raised, .btn-danger.raised, .btn-info.raised {
     box-shadow: 0 3px 0 0 #007299;
   }
+
+  .btn-danger.raised {
+    box-shadow: 0 3px 0 0 #B01525;
+  }
+
   .btn-primary.raised:active, .btn-primary.raised.active {
     background: #33a6cc;
     box-shadow: none;
@@ -78,6 +80,15 @@
     letter-spacing: 1px;
     text-transform: uppercase;
   }
+
+  .btn-small {
+    padding: 15px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
   .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
   }
@@ -105,21 +116,13 @@
 <div id="pageone">
   <body>
 
-    <div id="demo content">
-      <div id="loader-wrapper">
-        <div id="loader"></div>
-
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-      </div>
-    </div>
-
     <br>
 
     <div id="home-screen-text" class="container" align="center">
-      <b><h1>SOCIAL BUTTERFLY</h1></b>
+      <b><h2>SOCIAL BUTTERFLY</h2></b>
     </div>
-
+    
+    <br>
     <br>
 
     <div class="container" >
@@ -146,42 +149,66 @@
                       <br>
                       <li>
                        <a href="connect">
-                        <button type="button" class="btn btn-warning btn-block raised">Connect with Old Friends</button>
+                        <button type="button" class="btn btn-warning btn-block raised">Keep in Touch <br> with Old Friends</button>
                       </a>
                     </li>
                     <br>
+                    <br>
+                  <div align="center">
+                    <div class="points">
+                      <h1> 453 POINTS </h1>
+                    </div>
+                  </div>
+
+                                      <br>
+                                          <h4>YOU ARE CURRENTLY AT THE</h4>
+                      <h3>SOCIAL EXPERT LEVEL.</h3>
+                    <!--
                     <br>
                     <li>
                       <a href="events">
                         <button type="button" class="btn btn-warning btn-block raised">Go to Events</button>
                       </a>
                     </li>
-                  </ul>
-                </div>
-                <br>
+                  -->
+                </ul>
               </div>
+              <br>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="container" align="center">
-          <div id="home-screen-text" class="text" style="color: #FFFFFF">
-            <h3> Signed in as Shay Pearson </h3>
+      <br>
 
-              <div class="container" align="center">
-                <a href="/">
-                  <button type="button" class="btn btn-primary btn-block raised"> NOT YOU? </button>
-                </a>
-              </div>
+      <div class="container" align="center">
+        <div id="home-screen-text" class="text" style="color: #FFFFFF">
 
+          <div class="container" align="center">
+            <a href="/settings">
+              <button type="button" class="btn-small btn-lg btn-primary raised pull-left"> SETTINGS </button>
+            </a>
+
+            <a href="/">
+              <button type="button" class="btn-small btn-lg btn-info raised pull-right"> HELP & FAQ </button>
+            </a>
           </div>
+
+          <br>
+          <div class="container" align="center">
+            <a href="/">
+              <button type="button" class="btn btn-lg btn-small btn-danger btn-block raised"> LOG OUT </button>
+            </a>
+          </div>
+
         </div>
+      </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="js/main.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="js/main.js"></script>
 
-      </body>
-    </div>
+    </body>
+  </div>
 
-    </html>
+  </html>
